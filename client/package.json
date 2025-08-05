@@ -5,8 +5,8 @@
   "scripts": {
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
-    "android": "expo run:android",
-    "ios": "expo run:ios",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
     "prewidget": "npx expo prebuild --template ./node_modules/@bacons/apple-targets/prebuild-blank.tgz --clean",
     "web": "expo start --web",
     "deploy": "npx expo export -p web && eas deploy --prod",

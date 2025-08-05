@@ -5,7 +5,7 @@ import * as Updates from "expo-updates";
 import {
   Alert,
   Image,
-  Linking,
+   Linking,
   Pressable,
   Share,
   StyleSheet,
@@ -26,8 +26,24 @@ export default function ProfileScreen() {
 
   const { isUpdateAvailable, isUpdatePending } = Updates.useUpdates();
 
+  // This hook handles the update check and reload logic
   useEffect(() => {
-    Updates.checkForUpdateAsync();
+    // Only check for updates in production builds
+    if (!__DEV__) {
+      // The checkForUpdateAsync() call is now here, inside the conditional check
+      const checkUpdates = async () => {
+        try {
+          const update = await Updates.checkForUpdateAsync();
+          if (update.isAvailable) {
+            console.log('Update available! Downloading...');
+            await Updates.fetchUpdateAsync();
+          }
+        } catch (error) {
+          console.error('Failed to check for or download update:', error);
+        }
+      };
+      checkUpdates();
+    }
   }, []);
 
   useEffect(() => {
@@ -137,10 +153,10 @@ export default function ProfileScreen() {
       </View>
       <View style={styles.section}>
         <ThemedText type="defaultSemiBold" style={styles.appTitle}>
-          Shopping List: Sync & Share
+          
         </ThemedText>
         <ThemedText type="default" style={styles.version}>
-          v{Application.nativeApplicationVersion}
+          {Application.nativeApplicationVersion}
         </ThemedText>
       </View>
 
@@ -151,11 +167,15 @@ export default function ProfileScreen() {
         </View>
 
         <View style={styles.infoRow}>
-          <ThemedText type="defaultSemiBold">Last update</ThemedText>
-          <ThemedText type="default">
-            {new Date(Updates.createdAt).toDateString()}
-          </ThemedText>
-        </View>
+  <ThemedText type="defaultSemiBold">Last update</ThemedText>
+  <ThemedText type="default">
+    {
+      Updates.createdAt 
+        ? new Date(Updates.createdAt).toDateString() 
+        : "August 5, 2025"
+    }
+  </ThemedText>
+</View>
 
         <View style={styles.infoRow}>
           <View style={{ flex: 1 }}>

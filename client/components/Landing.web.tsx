@@ -71,7 +71,7 @@ export default function Landing({
           />
           <a
                 className={styles.appStoreButton}
-                href="https://apps.apple.com/us/app/shopping-list-sync-share/id6739513017"
+                href="#"
               >
                 <img
                   src={`${process.env.EXPO_BASE_URL}/apple-badge.svg`}
@@ -110,7 +110,7 @@ export default function Landing({
           Privacy Policy
         </button>
         <p className={styles.copyright}>
-          © {new Date().getFullYear()} Shopping List App. All rights reserved.
+          © {new Date().getFullYear()} Shopping List App. All rights reserved. Bhagwat S Nagare
         </p>
       </footer>
     </div>

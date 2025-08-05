@@ -135,7 +135,7 @@ export default function PrivacyPolicy() {
           please contact us at:
         </ThemedText>
         <ThemedText style={styles.contact}>
-          codewithbeto.dev@gmail.com
+          p4xpunagre@gmail.com
         </ThemedText>
       </View>
     </BodyScrollView>
