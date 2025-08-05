@@ -3,17 +3,17 @@
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
-    "start": "expo start",
-    "reset-project": "node ./scripts/reset-project.js",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "prewidget": "npx expo prebuild --template ./node_modules/@bacons/apple-targets/prebuild-blank.tgz --clean",
-    "web": "expo start --web",
-    "deploy": "npx expo export -p web && eas deploy --prod",
-    "test": "jest --watchAll",
-    "lint": "expo lint",
-    "vercel-build": "npx expo export --platform web --output-dir dist"
-  },
+  "start": "expo start",
+  "reset-project": "node ./scripts/reset-project.js",
+  "android": "expo start --android",
+  "ios": "expo start --ios",
+  "prewidget": "npx expo prebuild --template ./node_modules/@bacons/apple-targets/prebuild-blank.tgz --clean",
+  "web": "expo start --web",
+  "deploy": "npx expo export -p web && eas deploy --prod",
+  "test": "jest --watchAll",
+  "lint": "expo lint",
+  "build": "npx expo export --platform web --output-dir dist"
+},
   "jest": {
     "preset": "jest-expo"
   },
