@@ -11,7 +11,8 @@
     "web": "expo start --web",
     "deploy": "npx expo export -p web && eas deploy --prod",
     "test": "jest --watchAll",
-    "lint": "expo lint"
+    "lint": "expo lint",
+    "vercel-build": "npx expo export -p web"
   },
   "jest": {
     "preset": "jest-expo"
