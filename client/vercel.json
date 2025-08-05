@@ -1,9 +1,13 @@
 {
   "outputDirectory": "dist",
-  "rewrites": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "/_expo/static/(.*)",
+      "dest": "/_expo/static/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
