@@ -1,0 +1,145 @@
+{
+  "apiRoutes": [
+    {
+      "file": "_expo/functions/api/build-hook+api.js",
+      "page": "/api/build-hook",
+      "namedRegex": "^/api/build\\-hook(?:/)?$",
+      "routeKeys": {}
+    }
+  ],
+  "htmlRoutes": [
+    {
+      "file": "./(index)/index.tsx",
+      "page": "/(index)/index",
+      "namedRegex": "^(?:/\\(index\\))?(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(auth)/index.tsx",
+      "page": "/(auth)/index",
+      "namedRegex": "^(?:/\\(auth\\))?(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(index)/profile.tsx",
+      "page": "/(index)/profile",
+      "namedRegex": "^(?:/\\(index\\))?/profile(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(auth)/sign-up.tsx",
+      "page": "/(auth)/sign-up",
+      "namedRegex": "^(?:/\\(auth\\))?/sign\\-up(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "expo-router/build/views/Sitemap.js",
+      "page": "/_sitemap",
+      "namedRegex": "^/_sitemap(?:/)?$",
+      "routeKeys": {},
+      "generated": true
+    },
+    {
+      "file": "./(index)/emoji-picker.tsx",
+      "page": "/(index)/emoji-picker",
+      "namedRegex": "^(?:/\\(index\\))?/emoji\\-picker(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(index)/color-picker.tsx",
+      "page": "/(index)/color-picker",
+      "namedRegex": "^(?:/\\(index\\))?/color\\-picker(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(index)/list/new/scan.tsx",
+      "page": "/(index)/list/new/scan",
+      "namedRegex": "^(?:/\\(index\\))?/list/new/scan(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(auth)/sign-in-email.tsx",
+      "page": "/(auth)/sign-in-email",
+      "namedRegex": "^(?:/\\(auth\\))?/sign\\-in\\-email(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(index)/list/new/index.tsx",
+      "page": "/(index)/list/new/index",
+      "namedRegex": "^(?:/\\(index\\))?/list/new(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(auth)/reset-password.tsx",
+      "page": "/(auth)/reset-password",
+      "namedRegex": "^(?:/\\(auth\\))?/reset\\-password(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(auth)/privacy-policy.tsx",
+      "page": "/(auth)/privacy-policy",
+      "namedRegex": "^(?:/\\(auth\\))?/privacy\\-policy(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(index)/list/new/create.tsx",
+      "page": "/(index)/list/new/create",
+      "namedRegex": "^(?:/\\(index\\))?/list/new/create(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(index)/list/[listId]/product/[productId].tsx",
+      "page": "/(index)/list/[listId]/product/[productId]",
+      "namedRegex": "^(?:/\\(index\\))?/list/(?<listId>[^/]+?)/product/(?<productId>[^/]+?)(?:/)?$",
+      "routeKeys": {
+        "listId": "listId",
+        "productId": "productId"
+      }
+    },
+    {
+      "file": "./(index)/list/[listId]/product/new.tsx",
+      "page": "/(index)/list/[listId]/product/new",
+      "namedRegex": "^(?:/\\(index\\))?/list/(?<listId>[^/]+?)/product/new(?:/)?$",
+      "routeKeys": {
+        "listId": "listId"
+      }
+    },
+    {
+      "file": "./(index)/list/[listId]/share.tsx",
+      "page": "/(index)/list/[listId]/share",
+      "namedRegex": "^(?:/\\(index\\))?/list/(?<listId>[^/]+?)/share(?:/)?$",
+      "routeKeys": {
+        "listId": "listId"
+      }
+    },
+    {
+      "file": "./(index)/list/[listId]/index.tsx",
+      "page": "/(index)/list/[listId]/index",
+      "namedRegex": "^(?:/\\(index\\))?/list/(?<listId>[^/]+?)(?:/)?$",
+      "routeKeys": {
+        "listId": "listId"
+      }
+    },
+    {
+      "file": "./(index)/list/[listId]/edit.tsx",
+      "page": "/(index)/list/[listId]/edit",
+      "namedRegex": "^(?:/\\(index\\))?/list/(?<listId>[^/]+?)/edit(?:/)?$",
+      "routeKeys": {
+        "listId": "listId"
+      }
+    }
+  ],
+  "notFoundRoutes": [
+    {
+      "file": "expo-router/build/views/Unmatched.js",
+      "page": "/+not-found",
+      "namedRegex": "^(?:/(?<notfound>.+?))?(?:/)?$",
+      "routeKeys": {
+        "notfound": "not-found"
+      },
+      "generated": true
+    }
+  ],
+  "redirects": [],
+  "rewrites": []
+}
