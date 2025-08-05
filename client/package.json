@@ -12,7 +12,7 @@
   "deploy": "npx expo export -p web && eas deploy --prod",
   "test": "jest --watchAll",
   "lint": "expo lint",
-  "build": "npx expo export --platform web --output-dir dist"
+  "build": "npx expo export --platform web --output-dir dist --minify"
 },
   "jest": {
     "preset": "jest-expo"
