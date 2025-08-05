@@ -1,6 +1,6 @@
 {
-  "install-command": "bun install",
-  "build-command": "npx expo export -p web",
+  "installCommand": "bun install",
+  "buildCommand": "npx expo export -p web",
   "outputDirectory": "dist",
   "rewrites": [
     {
