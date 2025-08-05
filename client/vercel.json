@@ -1,12 +1,16 @@
 {
-  "installCommand": "bun install",
-  "buildCommand": "npx expo export -p web",
-  "outputDirectory": "dist",
-  "rewrites": [
+  "version": 2,
+  "builds": [
     {
-      "source": "/_expo/static/(.*)",
-      "destination": "/_expo/static/$1"
-    },
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "installCommand": "bun install",
+        "buildCommand": "npx expo export -p web"
+      }
+    }
+  ],
+  "rewrites": [
     {
       "source": "/(.*)",
       "destination": "/index.html"
