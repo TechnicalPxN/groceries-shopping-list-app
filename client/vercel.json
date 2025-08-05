@@ -9,11 +9,10 @@
       }
     }
   ],
-  "outputDirectory": "dist",
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/index.html"
+      "destination": "/_expo/static/html/index.html"
     }
   ]
 }
