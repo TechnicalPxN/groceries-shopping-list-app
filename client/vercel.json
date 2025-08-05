@@ -4,8 +4,12 @@
   "outputDirectory": "dist",
   "rewrites": [
     {
+      "source": "/_expo/static/(.*)",
+      "destination": "/_expo/static/$1"
+    },
+    {
       "source": "/(.*)",
-      "destination": "/_expo/static/html/index.html"
+      "destination": "/index.html"
     }
   ]
 }
